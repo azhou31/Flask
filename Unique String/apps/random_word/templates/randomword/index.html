@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Word Generator</title>
+</head>
+<body>
+    <h1>Random Word (attempt # {{request.session.count}})</h1>
+    <h2>{{request.session.rand_word}}</h2>
+    <a href="/generate"><input type="submit" value="Generate"></a>
+        <br>
+    <a href="/reset"><input type="submit" value="Reset"></a>
+</body>
+</html>
