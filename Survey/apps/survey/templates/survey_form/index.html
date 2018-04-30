@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+</head>
+<body>
+        
+    <form action="/submit" method="POST">
+        {% csrf_token %}
+        Your Name: <input type="text" name="name">
+    </br></br>
+        Favorite Disney Princess:
+        <select name="princess">
+            <option name="snow_white">Snow White</option>
+            <option name="cindy">Cinderella</option>
+            <option name="aurora">Aurora</option>
+            <option name="ariel">Ariel</option>
+            <option name="jasmin">Jasmine</option>
+            <option name="pocahontas">Pocahontas</option>
+            <option name="mulan">Mulan</option>
+            <option name="belle">Belle</option>
+        </select>
+    </br></br>
+        Favorite Disney Character:
+        <select name="character">
+            <option name="Mickey">Mickey Mouse</option>
+            <option name="Donald">Donald Duck</option>
+            <option name="minnie">Minnie Mouse</option>
+            <option name="goofy">Goofy</option>
+            <option name="pluto">Pluto</option>
+            <option name="tinkerbell">Tinkerbell</option>
+            <option name="pooh">Winnie the Pooh</option>
+        </select>
+    </br></br>
+        Comment (optional):
+    </br></br>
+        <input type="textarea" name="comment">
+    </br></br>
+        <a href=""><input type="submit" name="Submit"></a>
+    </form>
+</body>
+</html>
