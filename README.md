@@ -1,2 +1,3 @@
 # Python
-Django apps
+Python fundamentals and OOP  
+mini Django apps
